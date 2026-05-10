@@ -1,0 +1,82 @@
+{
+  "nav": { "home": "All Tools", "brand": "🛠️ DevTools" },
+  "home": {
+    "title": "Free Developer Tools",
+    "desc": "Simple, fast, browser-based tools for everyday dev tasks."
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "desc": "Format and validate JSON instantly"
+    },
+    "base64-encoder": {
+      "name": "Base64 Encoder",
+      "desc": "Encode and decode Base64 strings"
+    },
+    "timestamp": {
+      "name": "Timestamp Converter",
+      "desc": "Convert Unix timestamps to dates"
+    },
+    "regex-tester": {
+      "name": "Regex Tester",
+      "desc": "Test and debug regular expressions"
+    },
+    "color-picker": {
+      "name": "Color Picker",
+      "desc": "Pick colors and convert HEX/RGB/HSL"
+    },
+    "qrcode": {
+      "name": "QR Code Generator",
+      "desc": "Generate QR codes instantly"
+    }
+  },
+  "json": {
+    "title": "JSON Formatter",
+    "desc": "Format, validate, and beautify JSON instantly.",
+    "input": "Input JSON",
+    "output": "Output",
+    "format": "Format JSON",
+    "clear": "Clear",
+    "copy": "Copy Result"
+  },
+  "base64": {
+    "title": "Base64 Encoder / Decoder",
+    "desc": "Encode or decode Base64 strings instantly.",
+    "input": "Input",
+    "output": "Output",
+    "encode": "Encode",
+    "decode": "Decode",
+    "clear": "Clear",
+    "copy": "Copy"
+  },
+  "timestamp": {
+    "title": "Timestamp Converter",
+    "desc": "Convert Unix timestamps to human-readable dates.",
+    "current": "Current Unix Timestamp",
+    "convert": "Convert",
+    "copy": "Copy",
+    "label": "Convert timestamp to date",
+    "placeholder": "e.g. 1700000000"
+  },
+  "regex": {
+    "title": "Regex Tester",
+    "desc": "Test and debug regular expressions in real time.",
+    "pattern": "Pattern & Flags",
+    "testStr": "Test String",
+    "matches": "Matches",
+    "placeholder": "Enter text to test against..."
+  },
+  "color": {
+    "title": "Color Picker",
+    "desc": "Pick a color and get HEX, RGB, HSL values instantly.",
+    "copy": "Copy"
+  },
+  "qrcode": {
+    "title": "QR Code Generator",
+    "desc": "Generate a QR code for any URL or text instantly.",
+    "label": "URL or Text",
+    "placeholder": "https://example.com",
+    "download": "Download PNG"
+  },
+  "footer": "All tools are free and run in your browser"
+}

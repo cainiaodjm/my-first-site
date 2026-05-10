@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import ToolLayout from "../components/ToolLayout";
 
 export default function Base64() {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [error, setError] = useState(false);
+  const t = useTranslations("base64");
+  const tNav = useTranslations("nav");
 
   const encode = () => {
     setOutput(btoa(unescape(encodeURIComponent(input))));
@@ -23,14 +26,15 @@ export default function Base64() {
 
   return (
     <ToolLayout
-      title="Base64 Encoder / Decoder"
-      desc="Encode or decode Base64 strings instantly."
+      title={t("title")}
+      desc={t("desc")}
       emoji="🔐"
+      backLabel={tNav("home")}
     >
       <div className="space-y-4">
         <div>
           <label className="text-sm font-medium text-gray-700 mb-2 block">
-            Input
+            {t("input")}
           </label>
           <textarea
             className="w-full h-40 border border-gray-200 rounded-xl p-4 outline-none focus:ring-2 focus:ring-purple-500 font-mono text-sm bg-white resize-none"
@@ -44,13 +48,13 @@ export default function Base64() {
             onClick={encode}
             className="px-5 py-2.5 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors text-sm font-medium"
           >
-            Encode
+            {t("encode")}
           </button>
           <button
             onClick={decode}
             className="px-5 py-2.5 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors text-sm font-medium"
           >
-            Decode
+            {t("decode")}
           </button>
           <button
             onClick={() => {
@@ -59,21 +63,21 @@ export default function Base64() {
             }}
             className="px-5 py-2.5 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-sm font-medium text-gray-600"
           >
-            Clear
+            {t("clear")}
           </button>
         </div>
         {output && (
           <div>
             <div className="flex items-center justify-between mb-2">
               <label className="text-sm font-medium text-gray-700">
-                Output
+                {t("output")}
               </label>
               {!error && (
                 <button
                   onClick={() => navigator.clipboard.writeText(output)}
                   className="text-xs text-purple-600 hover:underline"
                 >
-                  Copy
+                  {t("copy")}
                 </button>
               )}
             </div>

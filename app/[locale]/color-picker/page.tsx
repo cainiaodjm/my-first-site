@@ -1,14 +1,16 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import ToolLayout from "../components/ToolLayout";
 
 export default function ColorPicker() {
   const [color, setColor] = useState("#3b82f6");
+  const t = useTranslations("color");
+  const tNav = useTranslations("nav");
 
-  const hex = color;
-  const r = parseInt(hex.slice(1, 3), 16);
-  const g = parseInt(hex.slice(3, 5), 16);
-  const b = parseInt(hex.slice(5, 7), 16);
+  const r = parseInt(color.slice(1, 3), 16);
+  const g = parseInt(color.slice(3, 5), 16);
+  const b = parseInt(color.slice(5, 7), 16);
   const rgb = `rgb(${r}, ${g}, ${b})`;
   const hsl = (() => {
     const rr = r / 255,
@@ -30,16 +32,17 @@ export default function ColorPicker() {
   })();
 
   const values = [
-    { label: "HEX", value: hex },
+    { label: "HEX", value: color },
     { label: "RGB", value: rgb },
     { label: "HSL", value: hsl },
   ];
 
   return (
     <ToolLayout
-      title="Color Picker"
-      desc="Pick a color and get HEX, RGB, HSL values instantly."
+      title={t("title")}
+      desc={t("desc")}
       emoji="🎨"
+      backLabel={tNav("home")}
     >
       <div className="space-y-6">
         <div className="bg-white border border-gray-200 rounded-xl p-6 flex items-center gap-6">
@@ -69,7 +72,7 @@ export default function ColorPicker() {
                   onClick={() => navigator.clipboard.writeText(value)}
                   className="text-xs text-pink-600 hover:underline shrink-0"
                 >
-                  Copy
+                  {t("copy")}
                 </button>
               </div>
             </div>

@@ -1,0 +1,73 @@
+{
+  "nav": { "home": "所有工具", "brand": "🛠️ 開發工具箱" },
+  "home": {
+    "title": "免費開發者工具",
+    "desc": "簡單、快速、無需登入的瀏覽器線上工具。"
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "JSON 格式化",
+      "desc": "一鍵格式化和驗證 JSON"
+    },
+    "base64-encoder": {
+      "name": "Base64 編解碼",
+      "desc": "Base64 字串編碼與解碼"
+    },
+    "timestamp": { "name": "時間戳轉換", "desc": "Unix 時間戳與日期互轉" },
+    "regex-tester": {
+      "name": "正規表示式測試",
+      "desc": "即時測試和除錯正規表示式"
+    },
+    "color-picker": { "name": "顏色選擇器", "desc": "取色並轉換 HEX/RGB/HSL" },
+    "qrcode": { "name": "QR Code 產生器", "desc": "快速產生 QR Code" }
+  },
+  "json": {
+    "title": "JSON 格式化",
+    "desc": "一鍵格式化、驗證和美化 JSON。",
+    "input": "輸入 JSON",
+    "output": "輸出結果",
+    "format": "格式化",
+    "clear": "清除",
+    "copy": "複製結果"
+  },
+  "base64": {
+    "title": "Base64 編解碼",
+    "desc": "Base64 字串編碼與解碼。",
+    "input": "輸入",
+    "output": "輸出",
+    "encode": "編碼",
+    "decode": "解碼",
+    "clear": "清除",
+    "copy": "複製"
+  },
+  "timestamp": {
+    "title": "時間戳轉換",
+    "desc": "Unix 時間戳與可讀日期互轉。",
+    "current": "目前 Unix 時間戳",
+    "convert": "轉換",
+    "copy": "複製",
+    "label": "時間戳轉日期",
+    "placeholder": "例如 1700000000"
+  },
+  "regex": {
+    "title": "正規表示式測試",
+    "desc": "即時測試和除錯正規表示式。",
+    "pattern": "正規式 & 旗標",
+    "testStr": "測試字串",
+    "matches": "符合結果",
+    "placeholder": "輸入要測試的文字..."
+  },
+  "color": {
+    "title": "顏色選擇器",
+    "desc": "取色並獲取 HEX、RGB、HSL 值。",
+    "copy": "複製"
+  },
+  "qrcode": {
+    "title": "QR Code 產生器",
+    "desc": "為任意連結或文字產生 QR Code。",
+    "label": "連結或文字",
+    "placeholder": "https://example.com",
+    "download": "下載 PNG"
+  },
+  "footer": "所有工具免費使用，在您的瀏覽器中執行"
+}

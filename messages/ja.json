@@ -1,0 +1,79 @@
+{
+  "nav": { "home": "全ツール", "brand": "🛠️ 開発ツール" },
+  "home": {
+    "title": "無料開発者ツール",
+    "desc": "シンプル・高速・ログイン不要のブラウザツール。"
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "JSONフォーマッター",
+      "desc": "JSONを即座に整形・検証"
+    },
+    "base64-encoder": {
+      "name": "Base64エンコーダー",
+      "desc": "Base64文字列のエンコード・デコード"
+    },
+    "timestamp": {
+      "name": "タイムスタンプ変換",
+      "desc": "Unixタイムスタンプを日付に変換"
+    },
+    "regex-tester": {
+      "name": "正規表現テスター",
+      "desc": "正規表現をリアルタイムでテスト"
+    },
+    "color-picker": {
+      "name": "カラーピッカー",
+      "desc": "HEX/RGB/HSLで色を取得"
+    },
+    "qrcode": { "name": "QRコード生成", "desc": "QRコードを即座に生成" }
+  },
+  "json": {
+    "title": "JSONフォーマッター",
+    "desc": "JSONを即座に整形・検証・美化します。",
+    "input": "JSON入力",
+    "output": "出力結果",
+    "format": "整形する",
+    "clear": "クリア",
+    "copy": "結果をコピー"
+  },
+  "base64": {
+    "title": "Base64エンコーダー/デコーダー",
+    "desc": "Base64文字列を即座にエンコード・デコード。",
+    "input": "入力",
+    "output": "出力",
+    "encode": "エンコード",
+    "decode": "デコード",
+    "clear": "クリア",
+    "copy": "コピー"
+  },
+  "timestamp": {
+    "title": "タイムスタンプ変換",
+    "desc": "Unixタイムスタンプを人間が読める日付に変換。",
+    "current": "現在のUnixタイムスタンプ",
+    "convert": "変換",
+    "copy": "コピー",
+    "label": "タイムスタンプを日付に変換",
+    "placeholder": "例: 1700000000"
+  },
+  "regex": {
+    "title": "正規表現テスター",
+    "desc": "正規表現をリアルタイムでテスト・デバッグ。",
+    "pattern": "パターン & フラグ",
+    "testStr": "テスト文字列",
+    "matches": "マッチ結果",
+    "placeholder": "テストするテキストを入力..."
+  },
+  "color": {
+    "title": "カラーピッカー",
+    "desc": "色を選択してHEX・RGB・HSL値を取得。",
+    "copy": "コピー"
+  },
+  "qrcode": {
+    "title": "QRコード生成",
+    "desc": "URLやテキストのQRコードを即座に生成。",
+    "label": "URLまたはテキスト",
+    "placeholder": "https://example.com",
+    "download": "PNG ダウンロード"
+  },
+  "footer": "全ツール無料・ブラウザ上で動作"
+}

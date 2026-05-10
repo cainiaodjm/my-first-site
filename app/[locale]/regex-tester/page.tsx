@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import ToolLayout from "../components/ToolLayout";
 
 export default function RegexTester() {
   const [pattern, setPattern] = useState("");
   const [flags, setFlags] = useState("g");
   const [text, setText] = useState("");
+  const t = useTranslations("regex");
+  const tNav = useTranslations("nav");
 
   const getMatches = () => {
     try {
@@ -19,14 +22,15 @@ export default function RegexTester() {
 
   return (
     <ToolLayout
-      title="Regex Tester"
-      desc="Test and debug regular expressions in real time."
+      title={t("title")}
+      desc={t("desc")}
       emoji="🔍"
+      backLabel={tNav("home")}
     >
       <div className="space-y-4">
         <div>
           <label className="text-sm font-medium text-gray-700 mb-2 block">
-            Pattern & Flags
+            {t("pattern")}
           </label>
           <div className="flex gap-3">
             <input
@@ -45,18 +49,20 @@ export default function RegexTester() {
         </div>
         <div>
           <label className="text-sm font-medium text-gray-700 mb-2 block">
-            Test String
+            {t("testStr")}
           </label>
           <textarea
             className="w-full h-40 border border-gray-200 rounded-xl p-4 outline-none focus:ring-2 focus:ring-orange-500 text-sm bg-white resize-none"
-            placeholder="Enter text to test against..."
+            placeholder={t("placeholder")}
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
         </div>
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <label className="text-sm font-medium text-gray-700">Matches</label>
+            <label className="text-sm font-medium text-gray-700">
+              {t("matches")}
+            </label>
             <span className="text-xs bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full font-medium">
               {matches.length}
             </span>
