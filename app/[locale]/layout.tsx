@@ -44,6 +44,10 @@ export default async function LocaleLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        <meta
+          name="google-site-verification"
+          content="VZFULYxID6OJEsZhAGYusUGSkNn-L4WadTso3vF6-Xg"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
