@@ -12,10 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Free JSON Formatter Online",
   description:
     "Format, validate and beautify JSON instantly with our free online JSON formatter tool.",
+  metadataBase: new URL("https://my-first-site-six-nu.vercel.app"),
 };
 export default function RootLayout({
   children,
